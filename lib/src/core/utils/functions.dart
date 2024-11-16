@@ -43,6 +43,9 @@ enum Currency {
 
   /// Kenyan Shilling (KES).
   KES,
+
+  ///Euro
+  EUR,
 }
 
 /// Converts a list of [PaymentOption] enums to a list of corresponding strings.
@@ -101,6 +104,8 @@ extension CurrencyExtension on Currency {
         return "ZAR";
       case Currency.KES:
         return "KES";
+      case Currency.EUR:
+        return "EUR";
       default:
         return "Unknown";
     }
